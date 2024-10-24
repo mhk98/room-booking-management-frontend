@@ -34,7 +34,7 @@ const RoomCard = () => {
     {rooms.map((room) => (
       <div key={room._id} className="bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md">
         <Image
-          src={`http://localhost:5000/${room.picture}`}
+          src={`https://room-booking-management-backend.onrender.com/${room.picture}`}
           alt={`${room.name} image`}
           width={300}
           height={200}

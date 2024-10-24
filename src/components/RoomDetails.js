@@ -117,7 +117,7 @@ const RoomDetails = () => {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
             <div className="col-span-2">
               <Image
-                src={`http://localhost:5000/${room.picture}`}
+                src={`https://room-booking-management-backend.onrender.com/${room.picture}`}
                 alt="Room Image"
                 className="rounded-lg shadow-lg"
                 width={900}
@@ -218,7 +218,7 @@ const RoomDetails = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg w-96">
               <h3 className="text-2xl font-semibold mb-4">{selectedRoom.name}</h3>
               <Image
-                src={`http://localhost:5000/${room.picture}`}
+                src={`https://room-booking-management-backend.onrender.com/${room.picture}`}
                 alt={`${selectedRoom.name} image`}
                 width={400}
                 height={250}
