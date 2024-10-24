@@ -21,10 +21,10 @@ const Login = () => {
     try {
       const res = await userLogin(formData).unwrap(); // Unwrap response to handle success or error
       console.log(res.data.user._id);
-      localStorage.setItem('userId', res.data.user._id)
-     if(res.status==='Success'){
-      router.push('/')
-     }
+      localStorage.setItem('userId', res.data.user._id);
+      if (res.status === 'Success') {
+        router.push('/');
+      }
     } catch (err) {
       console.error("Login failed", err); // Handle the error properly (e.g., show error messages)
     }
@@ -85,7 +85,12 @@ const Login = () => {
               {isLoading ? "Logging in..." : "Login"}
             </button>
           </div>
-          <p class="mt-2 text-center"><span>Don't have account?</span><span><a class="text-primary" href="/register"> Sign Up</a></span></p>
+          <p className="mt-2 text-center">
+            <span>Don't have an account?</span>
+            <span>
+              <a className="text-primary" href="/register"> Sign Up</a>
+            </span>
+          </p>
         </form>
       </div>
     </div>
